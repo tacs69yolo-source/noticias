@@ -1,1 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
 
+<body>
+    <div class="parent">
+        <!-- esta es la pantalla de la 
+            calculadora donde se muestra el numero-->
+        <div class="div1">
+            <h6 id="displaySuperior"></h6>
+            <h1 id="display"></h1>
+        </div>
+        <!-- son los botones de la calculadora-->
+        <div class="div2">MC</div>
+        <div class="div3">MR</div>
+        <div class="div4">MS</div>
+        <div class="div5">M+</div>
+        <div class="div6">M-</div>
+        <div class="div7">-></div>
+        <div class="div8">CE</div>
+        <div class="div9">C</div>
+        <div class="div10">+-</div>
+        <div class="div11">?</div>
+        <div class="div12"onclick=mostrar(7)>7</div>
+        <div class="div13"onclick=mostrar(8)>8</div>
+        <div class="div14"onclick=mostrar(9)>9</div>
+        <div class="div15"onclick="Operacion('/')">/</div>
+        <div class="div16">%</div>
+        <div class="div17"onclick=mostrar(4)>4</div>
+        <div class="div18"onclick=mostrar(5)>5</div>
+        <div class="div19"onclick=mostrar(6)>6</div>
+        <div class="div20" onclick="Operacion('*')">*</div>
+        <div class="div21">1/x</div>
+        <!-- se llama a la funcion mostrar con el numero del boton
+        -->
+        <div class="div22" onclick=mostrar(1)>1
+        </div>
+        <div class="div23" onclick=mostrar(2)>2</div>
+        <div class="div24" onclick=mostrar(3)>3</div>
+        <div class="div25" onclick="Operacion('-')">-</div>
+        <div class="div26" onclick="mostrar('0')">0</div>
+        <div class="div27" onclick="mostrar(',')">,</div>
+        <div class="div28" onclick="Operacion('+')">+</div>
+        <div class="div29" onclick="igual()">=</div>
+    </div>
+    
+</body>
+</html>
