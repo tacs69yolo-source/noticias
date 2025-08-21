@@ -1,0 +1,71 @@
+h1{
+    font-size: 50px;
+    color: rgb(187, 140, 47);
+}
+h2{
+    font-size: 30px;
+    color: rgb(163, 126, 23);
+}
+p{
+    font-size: 20px;
+    color: rgb(0, 0, 0);
+}
+h3{
+    font-size: 20px;
+    color: rgb(0, 0, 0);
+}
+h4{color: aqua;}
+body {
+    height: 1000px;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    gap: 8px;
+}
+    
+header {height: 100px;
+    grid-column: span 4 / span 4;
+    
+}
+
+main { height: 3750px;
+    grid-column: span 4 / span 4;
+    grid-row: span 3 / span 3;
+    grid-column-start: 1;
+    grid-row-start: 2;
+    margin: 10%;
+}
+
+nav { width: 200px;
+     
+    grid-row: span 5 / span 5;
+    grid-column-start: 5;
+    grid-row-start: 1;
+
+}
+
+footer {
+    grid-column: span 4 / span 4;
+    grid-row-start: 5;
+  
+}
+.cuadrado {
+    background-color: blueviolet;
+    padding: 40px;
+    border: solid cadetblue 40px;
+    margin: 80px;
+
+}
+.texto{
+    background-color: brown;
+    margin: 40px;
+    padding: 60px;
+    border: solid blue 50px;
+}
+.navegacion{
+    width: 200px;
+    background-color: brown;
+    margin: 40px;
+    padding: 60px;
+    border: solid blue 50px;
+}
