@@ -127,8 +127,86 @@ a{
 }
 @media (600px > width){
     main{
-        background: red;
+        
     }
+    body {
+    height: 100px;
+    width: max-content;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    background-repeat: repeat;
+    background-size: cover;
+    }
+h1 {
+    text-shadow: 1px 1px 1px #7b767c, 
+               6px 6px 8px rgb(228, 6, 6);  
+    font-size: 70px;
+    color: rgb(0, 0, 0);
+}
+nav {
+    height: 200px;
+    width: 100%;
+    background-color: brown;
+    grid-column: span 4 / span 4;
+}
+
+header {
+    width: max-content;
+    grid-column: span 4 / span 4;
+    grid-row-start: 2;
+}
+
+main {
+    grid-column: span 2 / span 2;
+    grid-row: span 2 / span 2;
+    grid-column-start: 2;
+    grid-row-start: 3;
+    width: max-content;
+}
+
+.asideIzq {
+    grid-row: span 2 / span 2;
+    grid-column-start: 1;
+    grid-row-start: 3;
+    width: 20%;
+    height: 730px;
+}
+
+.asideDer {
+    grid-row: span 2 / span 2;
+    grid-column-start: 4;
+    grid-row-start: 3;
+    width: 20%;
+    height: 730px;
+}
+.navegacionPestañas a {
+    text-decoration: none;
+    color: azure; 
+    margin: 10px 0px;
+    align-content: center;
+}
+.navegacionPestañas a:hover{
+    color: rgb(180, 11, 11);
+    padding: 5px;
+    border-radius: 40%;}
+
+footer {
+    grid-column: span 4 / span 4;
+    grid-row-start: 5;
+    height: 500px;
+}
+
+header{
+    position: sticky;
+    top: 10px;
+    font-size: 20px;
+}
+p{
+    position: fixed;
+    bottom: 100px;
+    right:  100px;
+}
 }
 .titulo {
     height: 150px;
